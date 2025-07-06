@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MG Gates and Iron Works</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MG Gates and Iron Works</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book-appointment">Book an Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to MG Gates and Iron Works</h2>
+    <p>We specialize in all kinds of commercial rolling gate installation, repair and maintenance, wrought iron fences, residential railings, custom made iron handrail and staircases, cellar doors, welding services etc.</p>
+  </section>
+
+  <section id="services">
+    <h2>Servicies</h2>
+    <ul>
+      <li>Comercial gates</li>
+      <li>Wrought iron fences</li>
+      <li>Railing</li>
+      <li>Cellar doors</li>
+      <li>Staircases</li>
+      <li>Window Guards</li>
+    </ul>
+  </section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.46%20AM.jpeg" alt="Imagen 1" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.35%20AM.jpeg" alt="Imagen 2" />
+    <img src="https://lh3.googleusercontent.com/MXTiMefjpK7VXg1Yy2IotG6oZmYHcWh4Rvgjr8J_Fxf3x4j8F3mnBInyLU8we4-lJwYNU7e8xrRRpuix=s265-w265-h265" alt="Imagen 3" />
+    <img src="https://lh3.googleusercontent.com/t5i7YIAAbMjOT5ywuKGi5aqHSmN_lxrsRb4Ugg_1uZg9cx9ncB8tjKJMu8l02k9bZGLaqDjQH1aHW0eH=s265-w265-h265" alt="Imagen 4" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.36%20AM.jpeg" alt="Imagen 5" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.36%20AM%20%281%29.jpeg" alt="Imagen 6" />
+    <img src="https://lh3.googleusercontent.com/qENXXDyCZC-A1AdlBhBDTdYPTBCgFHcWzWymYCwpc7Dcs1Ja3WcQ_1oI1deHKWguT2QPFotUsfx1VwTx=s265-w265-h265" alt="Imagen 7" />
+    <img src="https://lh3.googleusercontent.com/m0cbCm9x6wfYn1dJoaL8Vp2VsSKAvo-OtnSmBZN-zshAYwbDSBK35Njw8vRwaUu13Ykz1z2S3sefIChB=s265-w265-h265" alt="Imagen 8" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.21.06%20AM.jpeg" alt="Imagen 9" />
+    <img src="https://lh3.googleusercontent.com/FipvpUNTpOdsPrU-bhiQqs6L6BD26QId4z_lE0go7Q9M_sqfw07PY0SoH3_8yMNMC0ILVU5UrVliEq5T=s265-w265-h265" alt="Imagen 10" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.44%20AM.jpeg" alt="Imagen 11" />
+    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.47%20AM.jpeg" alt="Imagen 12" />
+  </div>
+</section>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Ajusta la imagen para no deformarse y cubrir el espacio */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+</style>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Phone Number: (347) 272-5079 / (646) 726-6474 </p>
+    <p>Email: mggatesnyc@gmail.com</p>
+  </section>
+
+  <section id="book-appointment">
+  <form action="https://formsubmit.co/mggatesnyc@gmail.com" method="POST">
+    <h2>Book an Appointment</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+    <label for="address">Service Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter the address where the work is needed" required>
+
+    <label for="message">Message or Request:</label>
+    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+    <!-- Anti-spam protection -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submission -->
+    <input type="hidden" name="_next" value="https://mggates.com/thank-you.html">
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+  <footer>
+    <p>© 2025 Rolling Gates. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

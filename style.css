@@ -324,12 +324,12 @@ a {
 }
 
 .hero-image {
-  width: 80%;
-  max-width: 1000px;
-  height: 300px;
+  width: 75%;
+  max-width: 900px;
+  height: 220px;
   object-fit: cover;
   object-position: center;
   display: block;
-  margin: 25px auto;
+  margin: 20px auto;
   border-radius: 12px;
 }

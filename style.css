@@ -330,6 +330,6 @@ a {
   object-fit: cover;
   object-position: center;
   display: block;
-  margin: 20px auto;
+  margin: 5px auto 25px auto;
   border-radius: 12px;
 }

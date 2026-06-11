@@ -322,3 +322,14 @@ a {
     background: #a8742f;
     color: white;
 }
+
+.hero-image {
+  width: 90%;
+  max-width: 1100px;
+  height: 430px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 25px auto;
+  border-radius: 12px;
+}

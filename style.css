@@ -346,3 +346,20 @@ a {
   margin: 5px auto 25px auto;
   border-radius: 12px;
 }
+
+button,
+input[type="submit"],
+form button,
+.contact-form button {
+    background-color: #c58b3b !important;
+    color: #111315 !important;
+    font-weight: 700;
+}
+
+button:hover,
+input[type="submit"]:hover,
+form button:hover,
+.contact-form button:hover {
+    background-color: #a8742f !important;
+    color: white !important;
+}

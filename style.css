@@ -265,10 +265,18 @@ footer {
 }
 
 .hero-label {
-    color: #c583b;
+    color: #c58b3b;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.hero-label span {
+    color: white;
+    background: #c58b3b;
+    padding: 6px 12px;
+    border-radius: 4px;
+
 }
 
 .hero h2 {

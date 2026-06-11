@@ -171,7 +171,7 @@ form button {
 
 form button:hover,
 form button:focus {
-  background-color: #d9aa2d;
+  background-color: #a8742f;
 }
 
 /* Footer */
@@ -272,10 +272,13 @@ footer {
 }
 
 .hero-label span {
-    color: white;
+    color: #111315;
     background: #c58b3b;
     padding: 6px 12px;
     border-radius: 4px;
+    display: inline-block;
+    margin-left: 8px;
+
 
 }
 

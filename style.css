@@ -274,11 +274,14 @@ footer {
  .hero-label .emergency-call {
     color: #111315;
     background: #c58b3b;
-    padding: 6px 12px;
-    border-radius: 4px;
+    padding: 8px 14px;
+    border-radius: 6px;
     display: inline-block;
     margin-left: 8px;
     text-decoration: none;
+    font-weight: 800;
+    white-space: nowrap;
+}
 
 
 }

@@ -49,7 +49,11 @@ nav ul li a {
   padding: 6px 10px;
   border-radius: 4px;
 }
-
+nav a {
+  display: inline-block;
+  margin: 0 12px;
+  text-decoration: none;
+}
 nav ul li a:hover,
 nav ul li a:focus {
   background-color: #c583b;

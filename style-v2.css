@@ -89,14 +89,23 @@ a {
   color: #0057d8;
 }
 
-.text-now {
-  background: #0057d8;
-  color: #ffffff;
-  padding: 13px 22px;
-  border-radius: 8px;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 13px;
+.text-now{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    background:#1657d8;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    padding:14px 24px;
+    border-radius:12px;
+    transition:.25s;
+}
+
+.text-now:hover{
+    background:#0f49bb;
+
 }
 
 .hero {

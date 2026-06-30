@@ -193,7 +193,7 @@ a {
   flex-direction: column;
   gap: 3px;
   background: #111827;
-  border: 2px solid #e11d48;
+  border: 2px solid #ffd33d;
   color: #ffffff;
   padding: 14px 22px;
   border-radius: 8px;
@@ -204,7 +204,7 @@ a {
 
 .emergency-call span {
   font-size: 13px;
-  color: #fca5a5;
+  color: #ffdd3d;
 }
 
 /* MOBILE */

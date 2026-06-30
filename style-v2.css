@@ -704,3 +704,102 @@ gap:8px;
 }
 
 }
+@media (max-width: 700px) {
+  .main-header {
+    position: relative;
+    padding: 22px 18px;
+  }
+
+  .logo-mg {
+    font-size: 48px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  nav {
+    font-size: 14px;
+    gap: 16px;
+  }
+
+  .text-now {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .hero {
+    min-height: 620px;
+    height: auto;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    position: relative;
+    padding: 60px 24px;
+    background: linear-gradient(
+      90deg,
+      rgba(6,22,51,.94),
+      rgba(6,22,51,.72)
+    );
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .btn,
+  .emergency-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-size: 34px;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 22px;
+    text-align: left;
+    font-size: 34px;
+  }
+
+  .local-law {
+    padding: 50px 24px;
+  }
+
+  .law-text h2 {
+    font-size: 34px;
+  }
+
+  .law-text p {
+    font-size: 18px;
+  }
+
+  .ba-card {
+    height: 260px;
+  }
+
+  .project-card {
+    height: 260px;
+  }
+
+  .review-card {
+    font-size: 20px;
+  }
+
+  .review-card p {
+    font-size: 18px;
+  }
+}

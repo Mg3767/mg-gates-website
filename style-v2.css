@@ -890,3 +890,66 @@ a {
 }
 
 }
+/* FINAL SERVICES OVERRIDE */
+
+#services.services-section{
+  padding:30px 16px !important;
+}
+
+#services .section-head{
+  margin-bottom:20px !important;
+}
+
+#services .section-head h2{
+  font-size:28px !important;
+  line-height:1.08 !important;
+}
+
+#services .services-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,1fr) !important;
+  gap:10px !important;
+  max-width:900px !important;
+  margin:0 auto !important;
+}
+
+#services .service-box{
+  min-height:115px !important;
+  height:auto !important;
+  padding:12px 8px !important;
+  border-radius:14px !important;
+  text-align:center !important;
+}
+
+#services .service-icon{
+  display:block !important;
+  font-size:24px !important;
+  color:#0057d8 !important;
+  height:24px !important;
+  width:100% !important;
+  margin:0 0 6px 0 !important;
+  line-height:1 !important;
+  background:none !important;
+}
+
+#services .service-box h3{
+  font-size:12px !important;
+  line-height:1.1 !important;
+  margin:0 0 5px !important;
+}
+
+#services .service-box p{
+  font-size:10.5px !important;
+  line-height:1.2 !important;
+  margin:0 !important;
+}
+
+/* Force icons even if HTML icon text fails */
+#services .service-box:nth-child(1) .service-icon::before{content:"▤";}
+#services .service-box:nth-child(2) .service-icon::before{content:"▥";}
+#services .service-box:nth-child(3) .service-icon::before{content:"▦";}
+#services .service-box:nth-child(4) .service-icon::before{content:"▣";}
+#services .service-box:nth-child(5) .service-icon::before{content:"▱";}
+#services .service-box:nth-child(6) .service-icon::before{content:"♜";}
+#services .service-box:nth-child(7) .service-icon::before{content:"▰";}
+#services .service-box:nth-child(8) .service-icon::before{content:"╱╱";}

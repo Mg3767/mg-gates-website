@@ -728,3 +728,107 @@ a {
   font-weight:800 !important;
   text-decoration:none !important;
 }
+/* SERVICES COMPACT */
+
+#services.services-section{
+  padding:42px 18px !important;
+}
+
+#services .section-head{
+  margin-bottom:26px !important;
+}
+
+#services .section-head p{
+  font-size:13px !important;
+  letter-spacing:4px !important;
+}
+
+#services .section-head h2{
+  font-size:34px !important;
+  line-height:1.1 !important;
+}
+
+#services .services-grid{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:16px !important;
+  max-width:1180px !important;
+  margin:0 auto !important;
+}
+
+#services .service-box{
+  min-height:185px !important;
+  padding:20px 18px !important;
+  border-radius:16px !important;
+}
+
+#services .service-icon{
+  width:54px !important;
+  height:44px !important;
+  margin-bottom:12px !important;
+  color:#0b63f6 !important;
+  font-size:34px !important;
+  line-height:1 !important;
+}
+
+/* temporary line-style icons */
+.gate-icon::before{content:"▤";}
+.grille-icon::before{content:"▥";}
+.window-icon::before{content:"▦";}
+.door-icon::before{content:"▣";}
+.cellar-icon::before{content:"▱";}
+.fence-icon::before{content:"♜";}
+.stairs-icon::before{content:"▰";}
+.railing-icon::before{content:"╱╱";}
+
+#services .service-box h3{
+  font-size:17px !important;
+  margin-bottom:8px !important;
+}
+
+#services .service-box p{
+  font-size:14px !important;
+  line-height:1.35 !important;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  #services.services-section{
+    padding:34px 16px !important;
+  }
+
+  #services .section-head{
+    margin-bottom:20px !important;
+  }
+
+  #services .section-head h2{
+    font-size:28px !important;
+  }
+
+  #services .services-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:12px !important;
+  }
+
+  #services .service-box{
+    min-height:150px !important;
+    padding:14px 12px !important;
+  }
+
+  #services .service-icon{
+    width:42px !important;
+    height:34px !important;
+    font-size:28px !important;
+    margin-bottom:8px !important;
+  }
+
+  #services .service-box h3{
+    font-size:14px !important;
+    margin-bottom:6px !important;
+  }
+
+  #services .service-box p{
+    font-size:12.5px !important;
+    line-height:1.3 !important;
+  }
+}

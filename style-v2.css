@@ -306,7 +306,7 @@ a {
   }
 
   .hero-shade {
-    min-eight: auto;
+    min-height: auto;
     padding: 60px 20px;
     background: linear-gradient(
       180deg,
@@ -469,7 +469,7 @@ a {
     line-height:1.25;
   }
 }
-}
+
 
 @media(max-width:430px){
   .services-grid{

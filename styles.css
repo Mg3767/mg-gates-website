@@ -590,9 +590,6 @@ h1 {
   letter-spacing: 0;
 }
 
-.footer-logo .logo-image {
-  filter: brightness(0) invert(1);
-}
 
 @media (max-width: 700px) {
   .logo-image {

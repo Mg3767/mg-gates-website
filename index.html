@@ -1,217 +1,445 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10957757088"></script>
-
-
-
-<script>
-
-
-
-window.dataLayer = window.dataLayer || [];
-
-
-
-function gtag(){dataLayer.push(arguments);}
-
-
-
-gtag('js', new Date());
-
-
-
-gtag('config', 'AW-10957757088');
-
-
-
-</script>  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MG Rolling Gates and Iron Works</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MG Gates and Iron Works provides commercial roll-down gate installation, emergency gate repair, storefront security gates, custom iron work and welding throughout NYC and surrounding areas.">
+  <title>MG Gates & Iron Works | NYC Security Gates & Iron Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>MG Gates & Iron Works</h1>
-    <nav>
-<a href="#home">Home</a>
-      
-<a href="#services">Services</a>
-      
-<a href="#gallery">Gallery</a>
-      
-<a href="#book-appointment">Quick Price Range</a>
-      
-<a href="#contact">Contact</a>
-</nav>
+  <div class="topbar">
+    <div>Serving NYC & Surrounding Areas</div>
+    <div class="topbar-right">
+      <span>Emergency Service Available</span>
+      <a href="tel:(347) 272-5079">Call Now</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#home">
+      <!-- LOGO: Replace images/logo.png with your business logo -->
+      <img class="logo-image" src="images/logo.png" alt="MG Gates and Iron Works logo">
+      <span>
+        <strong>MG GATES</strong>
+        <small>& IRON WORKS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#quote">Get a Free Quote</a>
+    </nav>
   </header>
 
-  <section id="home" class="hero">
-    <img class="hero-image" src="imagenes/nyc-open-grille-roll-down-security-gate.jpg" alt="NYC open grille roll down security gate installation">
-    <p class="hero-label">
-Custom Fabrication • Installation • Maintenance • <a class="emergency-call" href="tel:6467266474">📞 EMERGENCY GATE REPAIR</a>
-</p>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">COMMERCIAL SECURITY • IRON WORK • WELDING</span>
+        <h1>Security Gates Built to Protect Your Business.</h1>
+        <p>
+          Professional roll-down gate installation, emergency repairs,
+          storefront security gates, custom iron work and welding throughout NYC
+          and surrounding areas.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#quote">Get a Free Quote</a>
+          <a class="btn btn-outline" href="tel:(347) 272-5079">Emergency Gate Repair</a>
+        </div>
+        <div class="hero-trust">
+          <span>✓ Professional Workmanship</span>
+          <span>✓ Custom Solutions</span>
+          <span>✓ NYC & Surrounding Areas</span>
+        </div>
+      </div>
+    </section>
 
-<h2>NYC Roll Down Gates & Custom Iron Work Experts</h2>
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE DO</span>
+        <h2>Our Services</h2>
+        <p>Security gate, iron work and welding solutions for commercial properties throughout NYC and surrounding areas.</p>
+      </div>
 
-<p class="reviews">
-⭐⭐⭐⭐⭐ 5.0 Google Rated | 25+ Verified Google Reviews
-</p>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-roll-down.png" alt="Roll-Down Gates icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Roll-Down Gates</h3>
+          <p>Installation and replacement of commercial roll-down security gates.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-emergency.png" alt="Emergency Gate Repair icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Emergency Gate Repair</h3>
+          <p>Fast service for damaged, stuck or malfunctioning security gates.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-storefront.png" alt="Storefront Security icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Storefront Security</h3>
+          <p>Security gate solutions for storefronts, shops and commercial properties.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-open-grille.png" alt="Open Grille Upgrades icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Open Grille Upgrades</h3>
+          <p>Upgrade your existing gate for improved security, appearance and operation.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-iron-work.png" alt="Custom Iron Work icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Custom Iron Work</h3>
+          <p>Custom metalwork fabricated to fit your property's needs and style.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon-slot">
+          <img src="images/service-welding.png" alt="Welding Services icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="icon-fallback">ICON</span>
+        </div>
+          <h3>Welding Services</h3>
+          <p>Professional welding and metal repairs for commercial and custom projects.</p>
+        </article>
+      </div>
+    </section>
 
-<p>
-MG Gates and Iron Works provides commercial roll down gate installation, emergency gate repair, open grille gate upgrades, storefront security gates, custom iron work and welding services throughout NYC and surrounding areas. 
-</p>
+    <section class="about section" id="about">
+      <div class="about-image">
+        <div class="image-slot about-photo">
+          <!-- ABOUT PHOTO: Put your photo at images/about.jpg -->
+          <img src="images/about.jpg" alt="MG Gates and Iron Works project" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-fallback"><span>ABOUT PHOTO</span><small>Put your image in images/about.jpg</small></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">WHY MG GATES</span>
+        <h2>Built for Security. Built to Last.</h2>
+        <p>
+          MG Gates and Iron Works provides dependable commercial gate and iron
+          work services for businesses throughout NYC and surrounding areas.
+        </p>
+        <div class="check-list">
+          <div>✓ Professional installation</div>
+          <div>✓ Emergency repair service</div>
+          <div>✓ Custom fabrication</div>
+          <div>✓ Quality workmanship</div>
+          <div>✓ Commercial security solutions</div>
+        </div>
+        <a class="text-link" href="#quote">Request a Quote →</a>
+      </div>
+    </section>
 
-<div class="hero-buttons">
-<a href="#book-appointment">Get Price Range</a>
-<a href="#contact">Have a Question?</a>
-</div>
+    <section class="work section" id="work">
+      <div class="section-heading">
+        <span class="eyebrow">OUR RECENT WORK</span>
+        <h2>See What We Build</h2>
+        <p>Replace these placeholders with photos of actual MG Gates projects.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item"><img src="images/work-01.jpg" alt="MG Gates project 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 01<br><small>images/work-01.jpg</small></div></div>
+        <div class="gallery-item"><img src="images/work-02.jpg" alt="MG Gates project 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 02<br><small>images/work-02.jpg</small></div></div>
+        <div class="gallery-item"><img src="images/work-03.jpg" alt="MG Gates project 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 03<br><small>images/work-03.jpg</small></div></div>
+        <div class="gallery-item"><img src="images/work-04.jpg" alt="MG Gates project 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 04<br><small>images/work-04.jpg</small></div></div>
+        <div class="gallery-item"><img src="images/work-05.jpg" alt="MG Gates project 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 05<br><small>images/work-05.jpg</small></div></div>
+        <div class="gallery-item"><img src="images/work-06.jpg" alt="MG Gates project 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><div>WORK PHOTO 06<br><small>images/work-06.jpg</small></div></div>
+      </div>
+    </section>
+
+<section class="reviews section" id="reviews">
+
+  <div class="section-heading">
+    <span class="eyebrow">CUSTOMER REVIEWS</span>
+    <h2>What Our Customers Say</h2>
+    <p>See what our customers have to say about MG Gates & Iron Works.</p>
+  </div>
+
+  <div class="review-grid">
+
+    <!-- REVIEW 1 -->
+    <article class="review google-review">
+
+      <div class="review-top">
+        <div class="review-person">
+          <div class="review-avatar">S</div>
+          <div>
+            <strong>Sean Snyder</strong>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="google-logo">
+          <span class="google-g">G</span>
+          <small>Google</small>
+        </div>
+      </div>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        “Claudio was great! Very fast response time and a great price.
+        He was also kind enough to install something that will increase
+        the quality of life for my team. Will recommend to others.”
+      </p>
+
+      <div class="verified-review">
+        ✓ Google Customer Review
+      </div>
+
+    </article>
+
+
+    <!-- REVIEW 2 -->
+    <article class="review google-review">
+
+      <div class="review-top">
+        <div class="review-person">
+          <div class="review-avatar">J</div>
+          <div>
+            <strong>jamie hughis</strong>
+            <span>Google Local Guide</span>
+          </div>
+        </div>
+
+        <div class="google-logo">
+          <span class="google-g">G</span>
+          <small>Google</small>
+        </div>
+      </div>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        “Called to have a custom fence with gate made and installed around
+        outside basement stairway in Brooklyn. Marcello met me on site that
+        same weekend to discuss what I needed. Great job Marcello! You
+        delivered everything quick, as promised. Would definitely recommend
+        Marcello to anyone looking for affordable ironworks done in a timely
+        fashion!”
+      </p>
+
+      <div class="verified-review">
+        ✓ Google Customer Review
+      </div>
+
+    </article>
+
+
+    <!-- REVIEW 3 -->
+    <article class="review google-review">
+
+      <div class="review-top">
+        <div class="review-person">
+          <div class="review-avatar">R</div>
+          <div>
+            <strong>R Vasquez</strong>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="google-logo">
+          <span class="google-g">G</span>
+          <small>Google</small>
+        </div>
+      </div>
+
+      <div class="stars">★★★★★</div>
+
+      <p>
+        “M.G. Gate and Iron Works is a top of the line professional company
+        that I would recommend to anyone who wants to upgrade their manual
+        chain gate to a motorized gate. I dealt directly with the owner
+        Marcelo, who is a tremendously nice person and explained every
+        detail of the work. Totally satisfied with the work and
+        professionalism I received.”
+      </p>
+
+      <div class="verified-review">
+        ✓ Google Customer Review
+      </div>
+
+    </article>
+
+  </div>
+
+  <div class="google-reviews-bottom">
+    <span class="google-g google-g-large">G</span>
+
+    <div>
+      <strong>Excellent customer service</strong>
+      <div class="stars">★★★★★</div>
+      <small>Reviews from Google customers</small>
+    </div>
+  </div>
+<section class="quote section" id="quote">
+
+  <div class="quote-inner">
+
+    <div>
+      <span class="eyebrow">NEED A SECURITY GATE?</span>
+      <h2>Let's Protect Your Property.</h2>
+      <p>
+        Tell us what you need and we'll get back to you about your project.
+      </p>
+    </div>
+
+<form
+  id="quote-form"
+  class="quote-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+
+  <input
+    type="hidden"
+    name="access_key"
+    value="141adef1-5438-4d06-8c95-b5a9ab343d3d"
+  >
+
+  <input
+    type="hidden"
+    name="subject"
+    value="New Quote Request - MG Gates & Iron Works"
+  >
+
+  <input
+    type="checkbox"
+    name="botcheck"
+    style="display:none;"
+  >
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your name"
+    required
+  >
+
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone number"
+    required
+  >
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email address"
+    required
+  >
+
+  <select name="service" required>
+    <option value="">Service needed</option>
+    <option>Roll-Down Gate Installation</option>
+    <option>Emergency Gate Repair</option>
+    <option>Storefront Security Gate</option>
+    <option>Open Grille Upgrade</option>
+    <option>Custom Iron Work</option>
+    <option>Welding Services</option>
+  </select>
+
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Tell us about your project"
+    required
+  ></textarea>
+
+  <button
+    class="btn btn-primary"
+    type="submit"
+  >
+    Request a Free Quote
+  </button>
+
+</form>
+  </div>
+
 </section>
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Commercial Roll Down Gates</li>
-<li>Emergency Gate Repair</li>
-<li>Storefront Security Gates</li>
-<li>Custom Wrought Iron Fences</li>
-<li>Iron Railings</li>
-<li>Cellar Doors</li>
-<li>Wrought Iron Staircases</li>
-<li>Welding Services</li>
-    </ul>
-  </section>
-  <section id="local-law-75">
-<h2>NYC Local Law 75 Open Grille Gate Upgrades</h2>
-
-<p>
-NYC storefronts are required to use security gates that provide at least 70% visibility.
-MG Rolling Gates and Iron Works specializes in custom open grille roll down gates,
-storefront security gate replacements, fabrication and professional installation.
-</p>
-
-<ul>
-<li>70% Visibility Compliant Storefront Gates</li>
-<li>Custom Open Grille Roll Down Gates</li>
-<li>Replace Old Solid Roll Down Gates</li>
-<li>Commercial Security Gate Installation</li>
-<li>Serving NYC & Surrounding Areas</li>
-</ul>
-
 </section>
-  <section id="why-choose-us">
-<h2>Why Choose MG Gates & Iron Works LLC?</h2>
+ <section class="contact section" id="contact">
+  <div class="section-heading">
+    <span class="eyebrow">CONTACT MG GATES</span>
+    <h2>Ready to Get Started?</h2>
+  </div>
 
-<ul>
-  <li>Custom Made Gates & Iron Works</li>
-  <li>Free Price Range Available by Photos</li>
-  <li>Fast Emergency Gate Repair Service</li>
-  <li>Professional Installation & Repairs</li>
-  <li>Residential & Commercial Projects</li>
-  <li>Serving NYC & Surrounding Areas</li>
-</ul>
+  <div class="contact-grid">
 
-</section>
-  <section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.46%20AM.jpeg" alt="Imagen 1" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.35%20AM.jpeg" alt="Imagen 2" />
-    <img src="https://lh3.googleusercontent.com/MXTiMefjpK7VXg1Yy2IotG6oZmYHcWh4Rvgjr8J_Fxf3x4j8F3mnBInyLU8we4-lJwYNU7e8xrRRpuix=s265-w265-h265" alt="Imagen 3" />
-    <img src="https://lh3.googleusercontent.com/t5i7YIAAbMjOT5ywuKGi5aqHSmN_lxrsRb4Ugg_1uZg9cx9ncB8tjKJMu8l02k9bZGLaqDjQH1aHW0eH=s265-w265-h265" alt="Imagen 4" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.36%20AM.jpeg" alt="Imagen 5" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.36%20AM%20%281%29.jpeg" alt="Imagen 6" />
-    <img src="https://lh3.googleusercontent.com/qENXXDyCZC-A1AdlBhBDTdYPTBCgFHcWzWymYCwpc7Dcs1Ja3WcQ_1oI1deHKWguT2QPFotUsfx1VwTx=s265-w265-h265" alt="Imagen 7" />
-    <img src="https://lh3.googleusercontent.com/m0cbCm9x6wfYn1dJoaL8Vp2VsSKAvo-OtnSmBZN-zshAYwbDSBK35Njw8vRwaUu13Ykz1z2S3sefIChB=s265-w265-h265" alt="Imagen 8" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.21.06%20AM.jpeg" alt="Imagen 9" />
-    <img src="https://lh3.googleusercontent.com/FipvpUNTpOdsPrU-bhiQqs6L6BD26QId4z_lE0go7Q9M_sqfw07PY0SoH3_8yMNMC0ILVU5UrVliEq5T=s265-w265-h265" alt="Imagen 10" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.44%20AM.jpeg" alt="Imagen 11" />
-    <img src="imagenes/WhatsApp%20Image%202025-07-03%20at%208.25.47%20AM.jpeg" alt="Imagen 12" />
+    <a href="tel:+13472725079" class="contact-card">
+      <span class="contact-icon">☎</span>
+      <div>
+        <small>CALL US</small>
+        <strong>(347) 272-5079</strong>
+      </div>
+    </a>
+
+    <a href="mailto:mggatesnyc@gmail.com" class="contact-card">
+      <span class="contact-icon">✉</span>
+      <div>
+        <small>EMAIL</small>
+        <strong>mggatesnyc@gmail.com</strong>
+      </div>
+    </a>
+
+    <div class="contact-card">
+      <span class="contact-icon">⌖</span>
+      <div>
+        <small>SERVICE AREA</small>
+        <strong>NYC & Surrounding Areas</strong>
+      </div>
+    </div>
+
   </div>
 </section>
+  </main>
 
-<style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-  .gallery img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover; /* Ajusta la imagen para no deformarse y cubrir el espacio */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-</style>
-
-  <section id="estimate">
-<h2>Tell Us About Your Commercial Security Gate Or Custom Iron Works Project</h2>
-  
-
-<section id="book-appointment">
-  <form action="https://formsubmit.co/mggatesnyc@gmail.com" method="POST" enctype="multipart/form-data" onsubmit="gtag('event','conversion',{'send_to':'AW-10957757088'});">    <h2>Request Free Estimate</h2>
-
-    <label for="name">Full Name:*</label>
-    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-    <label for="email">Email Address (optional):</label>
-    <input type="email" id="email" name="email" placeholder="example@email.com">
-
-    <label for="phone">Phone Number (for SMS/text updates):*</label>
-    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
-
-    <label for="address">Service Address:*</label>
-    <input type="text" id="address" name="address" placeholder="Enter the address where the work is needed" required>
-
-    <label for="service">Type of Service:*</label>
-<select id="service" name="service" required>
-  <option value="">Select a service</option>
-  <option>Commercial Roll Down Security Gates</option> 
-  <option>Gate Repair</option>
-  <option>Open Grille Gates / Local Law 75 Upgrade</option>
-  <option>Custom Iron Works</option>
-  <option>Railings / Handrails</option>
-  <option>Cellar Doors</option>
-  <option>Custom Wrought Iron Fences</option>
-  <option>Staircases</option>
-  <option>Other</option>
-</select>
-    <label for="photos">Upload Photos (recommended):</label>
-<input type="file" id="photos" name="photos" accept="image/*" multiple>  
-    <label for="message">Message or Request:*</label>
-    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
-
-    <!-- Anti-spam protection -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <!-- Redirect after submission -->
-    <input type="hidden" name="_next" value="https://mggatesnyc.com/thank-you.html">
-
-    <button type="submit">Send My Request</button>
-  </form>
-<div id="contact" class="contact-option" style="margin-top: 60px;">
-
-<h2>Prefer to Speak With Us?</h2>
-
-<p>
-Have questions or need help choosing the right service?
-Call or text MG Gates & Iron Works.
-</p>
-
-<p>
-<strong>(347) 272-5079</strong>
-</p>
-
-<a href="tel:3472725079" class="btn">
-Call / Text Us
-</a>
-
-</div>
-</div>
-</section>  <footer>
-    <p>© 2025 MG Rolling Gates and Iron Works. All rights reserved.</p>
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="#home">
+        <img class="logo-image" src="images/logo.png" alt="MG Gates and Iron Works logo">
+        <span><strong>MG GATES</strong><small>& IRON WORKS</small></span>
+      </a>
+      <p>Commercial security gates, iron work and welding throughout NYC and surrounding areas.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <span>Roll-Down Gates</span>
+      <span>Emergency Repairs</span>
+      <span>Storefront Security</span>
+      <span>Custom Iron Work</span>
+    </div>
   </footer>
+
+  <div class="copyright">© <span id="year"></span> MG Gates and Iron Works. All rights reserved.</div>
 
   <script src="script.js"></script>
 </body>

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 </head>
 
 <body>
@@ -297,33 +298,19 @@
     </div>
 
 
-    <form
-      id="quote-form"
-      class="quote-form"
-      action="https://api.web3forms.com/submit"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-
-      <!-- WEB3FORMS ACCESS KEY -->
-      <input
-        type="hidden"
-        name="access_key"
-        value="141adef1-5438-4d06-8c95-b5a9ab343d3d"
-      >
+   <form
+  id="quote-form"
+  class="quote-form"
+  action="https://submit-form.com/1fjIJ8if2"
+  method="POST"
+>
+    
 
       <!-- EMAIL SUBJECT -->
       <input
         type="hidden"
         name="subject"
         value="New Quote Request - MG Gates & Iron Works"
-      >
-
-      <!-- BASIC SPAM PROTECTION -->
-      <input
-        type="checkbox"
-        name="botcheck"
-        style="display:none;"
       >
 
 
@@ -393,60 +380,61 @@
       ></textarea>
 
 
-      <!-- PHOTO NOTICE -->
-      <div class="estimate-photo-notice">
+ <!-- PHOTO NOTICE -->
+<div class="estimate-photo-notice">
 
-        <div class="notice-icon">📷</div>
+  <div class="notice-icon">📷</div>
 
-        <div>
+  <div>
 
-          <strong>
-            Photo Required for Estimate
-          </strong>
+    <strong>
+      Photo Required for Estimate
+    </strong>
 
-          <p>
-            Please upload a clear photo of the gate, storefront,
-            fence, or area where the work is needed.
-            A photo is required for us to provide an accurate estimate.
-          </p>
+    <p>
+      Please upload a clear photo of the gate, storefront,
+      fence, or area where the work is needed.
+      A photo is required for us to provide an accurate estimate.
+    </p>
 
-          <p class="large-file-note">
-            Is your photo larger than 5 MB?
-            Email it to
-            <a href="mailto:mggatesnyc@gmail.com">
-              mggatesnyc@gmail.com
-            </a>
-            along with your name and phone number.
-          </p>
+    <p class="large-file-note">
+      If you have trouble uploading your photo, please email it to
+      <a href="mailto:mggatesnyc@gmail.com">
+        mggatesnyc@gmail.com
+      </a>
+      along with your name and phone number.
+    </p>
 
-        </div>
+  </div>
 
-      </div>
+</div>
 
 
-      <!-- PHOTO UPLOAD -->
-      <div class="photo-upload">
+ <!-- PHOTO UPLOAD WITH UPLOADCARE -->
+<div class="photo-upload">
 
-        <label for="project-photo">
-          Upload a Photo of Your Project
-        </label>
+  <label for="project-photo">
+    Upload a Photo of Your Project
+  </label>
 
-        <p class="upload-help">
-          Upload a clear photo showing the work that needs to be completed.
-        </p>
+  <p class="upload-help">
+    Upload a clear photo showing the work that needs to be completed.
+  </p>
 
-        <input
-          type="file"
-          id="project-photo"
-          name="attachment"
-          accept="image/jpeg,image/png,image/webp"
-        >
+  <input
+    type="hidden"
+    id="project-photo"
+    name="project_photo"
+    role="uploadcare-uploader"
+    data-public-key="b20577212daf09dd0022"
+    data-images-only="true"
+  >
 
-        <small>
-          JPG, PNG or WEBP. Maximum file size: 5 MB.
-        </small>
+  <small>
+    Select a photo of the project to include with your quote request.
+  </small>
 
-      </div>
+</div>
 
 
       <!-- SUBMIT -->

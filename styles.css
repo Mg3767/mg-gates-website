@@ -923,3 +923,82 @@ h1 {
 .google-g-large {
   font-size: 42px;
 }
+/* ==================================
+   FREE QUOTE - PHOTO UPLOAD
+   ================================== */
+
+.estimate-photo-notice {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 18px;
+  background: #EDF4FB;
+  border-left: 4px solid #2166B1;
+  border-radius: 5px;
+}
+
+.notice-icon {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.estimate-photo-notice strong {
+  display: block;
+  color: #071A33;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.estimate-photo-notice p {
+  margin: 0;
+  color: #455468;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.estimate-photo-notice .large-file-note {
+  margin-top: 8px;
+}
+
+.estimate-photo-notice a {
+  color: #2166B1;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* PHOTO UPLOAD BOX */
+
+.photo-upload {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 18px;
+  border: 2px dashed #cbd8e8;
+  border-radius: 8px;
+  background: #f7f9fc;
+}
+
+.photo-upload label {
+  display: block;
+  color: #071A33;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.photo-upload .upload-help {
+  color: #66768A;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.photo-upload input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.photo-upload small {
+  color: #7b8794;
+  font-size: 11px;
+}

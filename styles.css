@@ -912,6 +912,13 @@ h1 {
   }
 
 }
+.processing-note {
+  display: block;
+  margin-top: 8px;
+  color: #b9c7d8;
+  font-size: 11px;
+  line-height: 1.4;
+}
 
 .google-g-large {
   font-size: 42px;

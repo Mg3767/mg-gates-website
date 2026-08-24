@@ -1289,3 +1289,187 @@ a[href^="tel:"]:hover {
   }
 
 }
+/* ==================================
+   15% OFF PROMO POPUP
+   ================================== */
+
+.promo-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 20, 50, 0.72);
+
+  z-index: 9999;
+}
+
+.promo-overlay.show {
+  display: flex;
+}
+
+.promo-popup {
+  position: relative;
+
+  width: 100%;
+  max-width: 480px;
+
+  padding: 42px 35px 32px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.promo-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+
+  width: 34px;
+  height: 34px;
+
+  border: 0;
+  background: transparent;
+
+  color: #001D4A;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.promo-badge {
+  display: inline-block;
+
+  margin-bottom: 16px;
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background: #EDF7FC;
+  color: #58B1DE;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.promo-popup h2 {
+  margin: 0;
+
+  color: #58B1DE;
+
+  font-size: clamp(52px, 8vw, 78px);
+  line-height: 0.95;
+
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.promo-popup h3 {
+  margin: 14px 0 12px;
+
+  color: #001D4A;
+
+  font-size: 21px;
+  line-height: 1.15;
+
+  font-weight: 800;
+}
+
+.promo-popup p {
+  max-width: 380px;
+
+  margin: 0 auto 22px;
+
+  color: #5F6F83;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.promo-button {
+  display: block;
+
+  width: 100%;
+
+  padding: 15px 20px;
+
+  background: #58B1DE;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+
+  transition: all 0.2s ease;
+}
+
+.promo-button:hover {
+  background: #3B99C9;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(88, 177, 222, 0.30);
+}
+
+.promo-no-thanks {
+  margin-top: 13px;
+
+  border: 0;
+  background: transparent;
+
+  color: #7B8794;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.promo-no-thanks:hover {
+  color: #001D4A;
+}
+
+.promo-popup small {
+  display: block;
+
+  margin-top: 18px;
+
+  color: #9AA5B1;
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .promo-popup {
+    padding: 38px 22px 28px;
+  }
+
+  .promo-popup h3 {
+    font-size: 18px;
+  }
+
+  .promo-popup p {
+    font-size: 13px;
+  }
+
+}

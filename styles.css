@@ -1085,3 +1085,23 @@ h1 {
   }
 
 }
+/* ===============================
+   EMERGENCY CALL NOW BUTTON
+   =============================== */
+
+a[href^="tel:"] {
+  background: #D62828;
+  color: #FFFFFF;
+  border: 2px solid #D62828;
+  font-weight: 800;
+  box-shadow: 0 5px 15px rgba(214, 40, 40, 0.28);
+  transition: all 0.2s ease;
+}
+
+a[href^="tel:"]:hover {
+  background: #B91C1C;
+  color: #FFFFFF;
+  border-color: #B91C1C;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(214, 40, 40, 0.38);
+}

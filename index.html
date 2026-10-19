@@ -18,6 +18,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Warm gold accents and a compact, optional project-photo section. */
+    a[href^="tel:"] {
+      background: #E8BD65;
+      color: #071A33;
+      border-color: #E8BD65;
+      box-shadow: 0 4px 12px rgba(7, 26, 51, 0.12);
+    }
+    a[href^="tel:"]:hover {
+      background: #D9A94D;
+      color: #071A33;
+      border-color: #D9A94D;
+      box-shadow: 0 6px 14px rgba(7, 26, 51, 0.18);
+    }
+    a[href^="tel:"]:focus-visible {
+      outline: 3px solid #2166B1;
+      outline-offset: 4px;
+    }
+    a.contact-card[href^="tel:"] small,
+    a.contact-card[href^="tel:"] strong { color: #071A33; }
+    .photo-upload.photo-upload-compact {
+      padding: 12px 14px;
+      margin-top: 0;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      box-shadow: none;
+    }
+    .photo-upload-compact label { color: #FFFFFF; font-size: 13px; }
+    .photo-upload-compact .upload-help {
+      color: #C7D5E6;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 4px 0 9px;
+    }
+    .photo-upload-compact .uploadcare--widget__button_type_open {
+      padding: 8px 12px;
+      font-size: 12px;
+      width: auto;
+    }
+    .photo-upload-compact .uploadcare--widget { color: #C7D5E6; }
+    .quote-form { gap: 14px; }
+    .quote-form input:not([type="hidden"]),
+    .quote-form select,
+    .quote-form textarea {
+      border-radius: 7px;
+      padding: 12px 14px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .quote-form input:not([type="hidden"]),
+    .quote-form select { min-height: 46px; }
+    .quote-form select { grid-column: 1 / -1; }
+    .quote-form textarea { min-height: 100px; }
+    .quote-form input:focus-visible,
+    .quote-form select:focus-visible,
+    .quote-form textarea:focus-visible {
+      outline: 3px solid #8FC5FF;
+      outline-offset: 2px;
+    }
+  </style>
   <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 </head>
 
@@ -389,6 +450,8 @@
 <input
   type="text"
   name="name"
+  aria-label="Your name"
+  autocomplete="name"
   placeholder="Your name"
   required
 >
@@ -397,6 +460,8 @@
 <input
   type="tel"
   name="phone"
+  aria-label="Cell phone number"
+  autocomplete="tel"
   placeholder="Cell phone number (Text)"
   required
 >
@@ -405,6 +470,8 @@
 <input
   type="email"
   name="email"
+  aria-label="Email address"
+  autocomplete="email"
   placeholder="Email address"
   required
 >
@@ -413,13 +480,15 @@
 <input
   type="text"
   name="project_address"
+  aria-label="Project address"
+  autocomplete="street-address"
   placeholder="Project address"
   required
 >
 
 
       <!-- SERVICE -->
-      <select name="service" required>
+      <select name="service" aria-label="Service needed" required>
 
         <option value="">
           Service needed
@@ -451,53 +520,17 @@
       <!-- PROJECT DESCRIPTION -->
       <textarea
         name="message"
-        rows="4"
+        aria-label="Tell us about your project"
+        rows="3"
         placeholder="Tell us about your project"
         required
       ></textarea>
 
 
- <!-- PHOTO NOTICE -->
-<div class="estimate-photo-notice">
-
-  <div class="notice-icon">📷</div>
-
-  <div>
-
-    <strong>
-      Photo Required for Estimate
-    </strong>
-
-    <p>
-      Please upload a clear photo of the gate, storefront,
-      fence, or area where the work is needed.
-      A photo is required for us to provide an accurate estimate.
-    </p>
-
-    <p class="large-file-note">
-      If you have trouble uploading your photo, please email it to
-      <a href="mailto:mggatesnyc@gmail.com">
-        mggatesnyc@gmail.com
-      </a>
-      along with your name and phone number.
-    </p>
-
-  </div>
-
-</div>
-
-
- <!-- PHOTO UPLOAD WITH UPLOADCARE -->
-<div class="photo-upload">
-
-  <label for="project-photo">
-    Upload a Photo of Your Project
-  </label>
-
-  <p class="upload-help">
-    Upload a clear photo showing the work that needs to be completed.
-  </p>
-
+ <!-- OPTIONAL PROJECT PHOTO -->
+<div class="photo-upload photo-upload-compact">
+  <label for="project-photo">Project photo — if available</label>
+  <p class="upload-help" id="photo-help">A photo helps us review your project and provide a more accurate price range. Don’t have one handy? You can still send your request.</p>
   <input
     type="hidden"
     id="project-photo"
@@ -505,14 +538,9 @@
     role="uploadcare-uploader"
     data-public-key="b20577212daf09dd0022"
     data-images-only="true"
+    aria-describedby="photo-help"
   >
-
-  <small>
-    Select a photo of the project to include with your quote request.
-  </small>
-
 </div>
-
 
       <!-- SUBMIT -->
       <button
@@ -636,6 +664,62 @@
 
   <div class="copyright">© <span id="year"></span> MG Rolling Gates and Iron Works. All rights reserved.</div>
 
+  <script>
+  // Record the observed visit source with the quote request, without sending
+  // contact details to an analytics service or changing Ads conversion tracking.
+  (() => {
+    const form = document.getElementById("quote-form");
+    if (!form) return;
+    const storageKey = "mgLeadSourceV1";
+    const params = new URLSearchParams(window.location.search);
+    const clean = value => (value || "").replace(/[\u0000-\u001f\u007f]/g, "").slice(0, 200);
+    let referrerHost = "";
+    try { referrerHost = new URL(document.referrer).hostname.toLowerCase(); } catch (_) {}
+    const ownHost = window.location.hostname.replace(/^www\./, "");
+    const externalReferrer = referrerHost && referrerHost.replace(/^www\./, "") !== ownHost;
+    const utmSource = clean(params.get("utm_source"));
+    const utmMedium = clean(params.get("utm_medium"));
+    const utmCampaign = clean(params.get("utm_campaign"));
+    const googleAdIdentifier = ["gclid", "gbraid", "wbraid"].some(key => params.get(key));
+    let source = "Direct / unknown";
+    if (googleAdIdentifier) source = "Google Ads identifier detected (not verified)";
+    else if (utmSource.toLowerCase() === "google" && utmCampaign.toLowerCase() === "business_profile") source = "Google Business Profile tagged link";
+    else if (utmSource) source = "Tagged link: " + utmSource + (utmMedium ? " / " + utmMedium : "");
+    else if (externalReferrer && /(^|\.)google\.[a-z.]+$/.test(referrerHost)) source = "Google organic / profile (cannot distinguish without tagged link)";
+    else if (externalReferrer) source = "Referral: " + referrerHost;
+    let visit = {
+      lead_source: source,
+      lead_utm_source: utmSource,
+      lead_utm_medium: utmMedium,
+      lead_utm_campaign: utmCampaign,
+      lead_referrer_host: externalReferrer ? clean(referrerHost) : "",
+      lead_landing_page: window.location.origin + window.location.pathname
+    };
+    // Keep the source across page navigation in this browser tab. A new
+    // tagged or external arrival replaces it; direct navigation preserves it.
+    try {
+      if (!googleAdIdentifier && !utmSource && !externalReferrer) {
+        const stored = JSON.parse(sessionStorage.getItem(storageKey) || "null");
+        if (stored && typeof stored.lead_source === "string") visit = stored;
+      }
+      sessionStorage.setItem(storageKey, JSON.stringify(visit));
+    } catch (_) { /* Forms still submit if browser storage is unavailable. */ }
+    function attachSource() {
+      Object.keys(visit).forEach(name => {
+        let input = form.querySelector('input[name="' + name + '"]');
+        if (!input) {
+          input = document.createElement("input");
+          input.type = "hidden";
+          input.name = name;
+          form.appendChild(input);
+        }
+        input.value = clean(visit[name]);
+      });
+    }
+    attachSource();
+    form.addEventListener("submit", attachSource);
+  })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
